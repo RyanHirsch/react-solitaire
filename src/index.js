@@ -6,9 +6,6 @@ import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 import App from './containers/App/';
 
-/* redux-devtools */
-import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
-
 /* eslint-enable no-unused-vars*/
 
 const store = configureStore();
@@ -18,9 +15,6 @@ const Game = () => (
     <Provider store={store}>
       <App />
     </Provider>
-    {/* <DebugPanel top right bottom>
-      <DevTools store={store} monitor={LogMonitor} />
-    </DebugPanel> */}
   </div>
 );
 
